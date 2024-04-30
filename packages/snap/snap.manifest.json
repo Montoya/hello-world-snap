@@ -1,17 +1,18 @@
 {
-  "version": "0.1.0",
-  "description": "An example Snap written in TypeScript.",
-  "proposedName": "TypeScript Example",
+  "version": "1.0.0",
+  "description": "The 'Hello, world!' of MetaMask Snaps.",
+  "proposedName": "Hello World",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/template-snap-monorepo.git"
+    "url": "https://github.com/Montoya/mystery-fox.git"
   },
   "source": {
-    "shasum": "8K2XYy4vtJggi1UEQW5oLVgvwuPlmD+aN3F8oucCB2Y=",
+    "shasum": "GQhttHZbCgzdTeBJOk8Cx/LUbPqz10AWYRBC7cgBzoQ=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "packageName": "snap",
+        "iconPath": "images/icon.svg",
+        "packageName": "hello-world-snap",
         "registry": "https://registry.npmjs.org/"
       }
     }

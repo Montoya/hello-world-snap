@@ -110,10 +110,6 @@ const Index = () => {
     ? isFlask
     : snapsDetected;
 
-  const handleSendHelloClick = async () => {
-    await invokeSnap({ method: 'hello' });
-  };
-
   return (
     <Container>
       <Heading>
