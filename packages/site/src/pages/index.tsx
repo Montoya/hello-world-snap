@@ -136,7 +136,6 @@ const Index = () => {
                 'Snaps is pre-release software only available in MetaMask Flask, a canary distribution for developers with access to upcoming features.',
               button: <InstallFlaskButton />,
             }}
-            fullWidth
           />
         )}
         {!installedSnap && (
@@ -171,25 +170,6 @@ const Index = () => {
             disabled={!installedSnap}
           />
         )}
-        <Card
-          content={{
-            title: 'Send Hello message',
-            description:
-              'Display a custom message within a confirmation screen in MetaMask.',
-            button: (
-              <SendHelloButton
-                onClick={handleSendHelloClick}
-                disabled={!installedSnap}
-              />
-            ),
-          }}
-          disabled={!installedSnap}
-          fullWidth={
-            isMetaMaskReady &&
-            Boolean(installedSnap) &&
-            !shouldDisplayReconnectButton(installedSnap)
-          }
-        />
         <Notice>
           <p>
             Please note that the <b>snap.manifest.json</b> and{' '}
