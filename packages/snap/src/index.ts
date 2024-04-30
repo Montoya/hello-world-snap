@@ -1,5 +1,5 @@
 import type { OnHomePageHandler } from '@metamask/snaps-sdk';
-import { panel, text } from '@metamask/snaps-sdk';
+import { panel, text, button, form, input } from '@metamask/snaps-sdk';
 
 /**
  * Handle incoming JSON-RPC requests, sent through `wallet_invokeSnap`.
@@ -15,6 +15,27 @@ export const onHomePage: OnHomePageHandler = async () => {
   return { 
     content: panel([
       text("Hello, world!"),
+      button({ 
+        value: "Click Me",
+        name: "Interactive Button"
+      }),
+      input({
+        name: "Interactive Input",
+        label: "Fill Me"
+      }),
+      form({
+        name: "form-to-fill",
+        children: [
+          input({
+            name: "user-name",
+            placeholder: "Your name",
+          }),
+          button({
+            value: "Submit",
+            buttonType: "submit",
+          }),
+        ]
+      }),
     ]),
   }; 
 };

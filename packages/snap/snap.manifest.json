@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The 'Hello, world!' of MetaMask Snaps.",
   "proposedName": "Hello World",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "https://github.com/Montoya/mystery-fox.git"
   },
   "source": {
-    "shasum": "GQhttHZbCgzdTeBJOk8Cx/LUbPqz10AWYRBC7cgBzoQ=",
+    "shasum": "Ps7DhVv9FeOsQSAgrOcKKZ13f3vPJ7lInNk0QV8CJFE=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",

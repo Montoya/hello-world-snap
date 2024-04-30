@@ -1,6 +1,6 @@
 {
   "name": "hello-world-snap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The 'Hello, world!' of MetaMask Snaps.",
   "repository": {
     "type": "git",
