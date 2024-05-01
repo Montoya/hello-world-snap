@@ -4,7 +4,7 @@
       <title>Hello World Snap</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width"/>
-      <meta property="og:title" content="Farfeed Snap" />
+      <meta property="og:title" content="Hello World Snap" />
       <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
       <style type="text/css">
         body { 
@@ -21,7 +21,7 @@
           font-size:1.5rem;
           line-height:64px; 
           padding:0;
-          margin-bottom:72px; 
+          margin-bottom:32px; 
         }
         h1 img { 
           vertical-align:top;
@@ -42,27 +42,31 @@
         #links { 
           float:right; 
         }
+        a, a:link { 
+          color:#2196f3 !important; 
+        }
         .btn { 
           border-radius:6px; 
+          background-color:#2196f3; 
         }
       </style>
   </head>
   <body>
     <div id="page">
       <h1><img src="icon.png" width="64" height="64" alt=""> Hello World Snap</h1>
-      <p>The "Hello, world!" of MetaMask Snaps</p>
+      <p>The "Hello, world!" of MetaMask Snaps, <em>with a touch of interactivity&hellip;</em></p>
       <p id="loading">Loading...</p>
-      <p>After installing the Snap, open the Snaps menu in MetaMask and click on Hello World to view the message.</p>
+      <p>After installing the Snap, open the Snaps menu in MetaMask and click on Hello World to try it.</p>
     </div>
     <div id="footer">
-      Powered by MetaMask Snaps
+      Powered by <a href="https://metamask.io/snaps/">MetaMask Snaps</a>
     </div>
     
     <script type="text/javascript">
 
 const snapId = 'npm:hello-world-snap';
 const snapName = 'Hello World';
-const snapVersion = '1.1.0';  
+const snapVersion = '2.0.0';  
 
 /* 
  * Use EIP-6963 to detect MetaMask
@@ -151,7 +155,7 @@ window.onload = function() {
     if("found"!==document.getElementById('loading').className) { 
       /* Assume MetaMask was not detected */
       document.getElementById('loading').textContent = ""; 
-      document.getElementById('loading').insertAdjacentHTML("afterbegin", "Please install <a href='https://metamask.io/flask/'>MetaMask Flask</a> first.");  
+      document.getElementById('loading').insertAdjacentHTML("afterbegin", "Please install <a href='https://metamask.io/'>MetaMask</a> first.");  
     }
   }, 1000)
 
